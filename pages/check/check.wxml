@@ -1,0 +1,21 @@
+<!--pages/check/check.wxml-->
+<view class="container">
+  <view class="top">
+    <text>{{currentMon}}月 {{currentYear}}</text>
+    <image src="/assets/image/yuan.png"></image>
+  </view>
+  <calendar calendarConfig="{{calendarConfig}}"></calendar>
+  <view class="footer">
+    <view class="today">Today</view>
+    <view class="item">
+      <text class="t1">签到</text>
+      <text class="t2"></text>
+      <text class="t3" bindtap="go" data-index="1">进入</text>
+    </view>
+    <view class="item">
+      <text class="t1">请假</text>
+      <text class="t2"></text>
+      <text class="t3" bindtap="go" data-index="2">进入</text>
+    </view>
+  </view>
+</view>

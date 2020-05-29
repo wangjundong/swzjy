@@ -1,0 +1,33 @@
+<!--pages/menu/menu.wxml-->
+<view class="container">
+  <view class="menu-item">
+    <view class="item" bindtap="go" data-index="1" style="border-right: 3rpx solid #7b7b7b;border-bottom: 3rpx solid #7b7b7b;">
+      <image style="width: 81rpx;height: 66rpx;" src="/assets/icons/kb.png"></image>
+      <text>个人课表</text>
+    </view>
+    <view class="item" bindtap="go" data-index="2" style="border-bottom: 3rpx solid #7b7b7b;">
+      <image style="width:106rpx;height: 106rpx;" src="/assets/icons/kq.png"></image>
+      <text>考勤</text>
+    </view>
+  </view>
+  <view class="menu-item">
+    <view class="item" bindtap="go" data-index="3" style="border-right: 3rpx solid #7b7b7b;border-bottom: 3rpx solid #7b7b7b;">
+      <image style="width: 115rpx;height: 93rpx;" src="/assets/icons/hk.png"></image>
+      <text>还课</text>
+    </view>
+    <view class="item" bindtap="go" data-index="4" style="border-bottom: 3rpx solid #7b7b7b;">
+      <image style="width: 112rpx;height: 79rpx;" src="/assets/icons/tz.png"></image>
+      <text>通知</text>
+    </view>
+  </view>
+  <view class="menu-item">
+    <view class="item" bindtap="go" data-index="5" style="border-right: 3rpx solid #7b7b7b;">
+      <image style="width: 125rpx;height: 97rpx;" src="/assets/icons/fk.png"></image>
+      <text>意见反馈</text>
+    </view>
+    <view class="item" bindtap="go" data-index="6">
+      <image style="width: 123rpx;height: 100rpx;" src="/assets/icons/lx.png"></image>
+      <text>联系我们</text>
+    </view>
+  </view>
+</view>

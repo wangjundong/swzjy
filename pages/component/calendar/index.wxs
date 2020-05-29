@@ -1,0 +1,15 @@
+var find = function (e,data) {
+  // 是否出勤
+    if(data.chuqin.indexOf(e)!=-1)
+      return '_choosed_1';
+    else if(data.queqin.indexOf(e)!=-1)
+      return '_choosed_2';
+    else if(data.leave.indexOf(e)!=-1)
+      return '_choosed_3';
+    else
+      return '_choosed';
+}
+module.exports = {
+  find: find,
+};
+//module.exports.msg = "some msg";

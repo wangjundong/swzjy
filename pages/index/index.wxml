@@ -1,0 +1,18 @@
+<view style='margin-bottom:130rpx; 100%;height: 100%;{{currentTab==0?"background-color: #9dd8ff;":"background-color: #e8c65a;"}}'>
+<!-- 组件显示，根据自己需求添加 -->
+<view hidden="{{currentTab == 0? false: true}}">
+  <component_index class="ms_component" />
+</view>
+<view hidden="{{currentTab == 1? false: true}}">
+  <component_login class="ms_component" />
+</view>
+
+</view>
+<!-- 自定义tabbar -->
+<cover-view class="tab-bar">
+  <cover-view class="tab-bar-border"></cover-view>
+  <cover-view wx:for="{{list}}" wx:key="index" class="tab-bar-item" data-index="{{index}}" bindtap="switchTab">
+    <cover-image class="icon" src="{{currentTab === index ? item.selectedIconPath : item.iconPath}}"></cover-image>
+    <cover-view class="text" style="color: {{currentTab === index ? selectedColor : color}}">{{item.text}}</cover-view>
+  </cover-view>
+</cover-view>

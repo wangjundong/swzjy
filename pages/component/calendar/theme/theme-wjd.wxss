@@ -1,0 +1,60 @@
+.wjd_color,
+.wjd_weekend-color,
+.wjd_handle-color,
+.wjd_week-color {
+    color: #ffffff;
+}
+
+.wjd_today {
+    color: #ffffff;
+    background-color: #e1e7f5;
+}
+
+.wjd_choosed {
+    color: #ffffff;
+}
+.wjd_choosed_1 {
+    color: #ffffff;
+    background-color: #82ad53;
+}
+.wjd_choosed_2 {
+    color: #ffffff;
+    background-color: #c6b37b;
+}
+.wjd_choosed_3 {
+    color: #ffffff;
+    background-color: #237a86;
+}
+.wjd_date-disable {
+    color: #c7c7c7;
+}
+
+.wjd_prev-month-date,
+.wjd_next-month-date {
+    color: #e2e2e2;
+}
+
+.wjd_normal-date {
+    color: #ffffff;
+}
+
+.wjd_todo-circle {
+    border-color: #161035;
+}
+
+.wjd_todo-dot {
+    background-color: #161035;
+}
+
+.wjd_date-desc {
+    color: #c2c2c2;
+}
+
+.wjd_date-desc-lunar {
+    color: #161035;
+}
+
+.wjd_date-desc-disable {
+    color: #e2e2e2;
+}
+

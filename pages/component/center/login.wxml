@@ -1,0 +1,26 @@
+<!--pages/component/center/login.wxml-->
+<view class="container">
+    <image src="/assets/image/swz1.png" class="swz">书丸子</image>
+    <text class="title">语言表演艺术</text>
+    <text class="slogan">塑造真实 自信 阳光的你</text>
+    <view class="form">
+      <view class="form-item">
+        <text>我是老师</text>
+       <view class="radio" bindtap="who" data-id="1">
+          <view class="gou" wx:if="{{selected==1}}"></view>
+       </view>
+      </view>
+      <view class="form-item">
+        <text>我是学生</text>
+        <view class="radio" bindtap="who" data-id="2">
+          <view class="gou" wx:if="{{selected==2}}"></view>
+       </view>
+      </view>
+      <view class="sub" bindtap="go">
+        <button plain size="mini">
+          <view class="jt"></view>
+        </button>
+      </view>
+    </view>
+</view>
+

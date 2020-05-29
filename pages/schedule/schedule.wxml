@@ -1,0 +1,63 @@
+<!--pages/schedule/schedule.wxml-->
+<view class="container">
+  <view class="top">
+    <text>{{currentMon}}月 {{currentYear}}</text>
+    <image src="/assets/image/yuan.png"></image>
+  </view>
+  <calendar calendarConfig="{{calendarConfig}}"></calendar>
+  <view class="footer">
+    <view class="today">Today</view>
+   <swiper class="swiper" vertical>
+      <block>
+        <swiper-item class="item">
+          <view class="item-l">
+            <text>18:00</text>
+            <text>-</text>
+            <text>19:30</text>
+          </view>
+          <view class="item-r">
+              <scroll-view class="course" scroll-x>
+                <text>少儿C段少儿</text>
+              </scroll-view>
+              <view class="name">
+                <text class="teacher">漠梓清</text>
+                <text>书丸子二班</text>
+              </view>
+          </view>
+        </swiper-item>  
+      </block>
+      <block>
+        <swiper-item class="item" vertical>
+          <view class="item-l">
+            <text>18:00</text>
+            <text>-</text>
+            <text>19:30</text>
+          </view>
+          <view class="item-r">
+              <scroll-view class="course" scroll-x="true"><view>少儿C段少儿C段少儿C段少</view></scroll-view>
+              <view class="name">
+                <text class="teacher">漠梓清</text>
+                <text>书丸子二班</text>
+              </view>
+          </view>
+        </swiper-item>  
+      </block>
+      <block>
+        <swiper-item class="item" vertical>
+          <view class="item-l">
+            <text>18:00</text>
+            <text>-</text>
+            <text>19:30</text>
+          </view>
+          <view class="item-r">
+              <scroll-view class="course" scroll-x="true">少儿C段少儿C段少儿C段少</scroll-view>
+              <view class="name">
+                <text class="teacher">漠梓清</text>
+                <text>书丸子二班</text>
+              </view>
+          </view>
+        </swiper-item>  
+      </block>
+   </swiper>
+  </view>
+</view>

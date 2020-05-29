@@ -1,0 +1,7 @@
+/* pages/start/start.wxss */
+page{width: 100%;height: 100%;}
+.container{background-color: #ede9e8;display: flex;justify-content: flex-start;align-items: center;flex-direction: column;width: 100%;height: 100%;}
+.fm1{width: 455rpx;height: 22rpx;margin: 263rpx 0 80rpx 0;}
+.logo{width: 251rpx;height: 251rpx;}
+.fm2{width: 307rpx;height: 31rpx;margin-top: 80rpx;}
+.fm3{width: 245rpx;height: 22rpx;margin-top: 103rpx;}

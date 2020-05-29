@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/index/index",
+    "pages/schoolDesc/schoolDesc",
+    "pages/schoolList/schoolList",
+    "pages/schoolDetail/schoolDetail",
+    "pages/teacherList/teacherList",
+    "pages/activities/activities",
+    "pages/web/web",
+    "pages/menu/menu",
+    "pages/check/check",
+    "pages/signIn/signIn",
+    "pages/leave/leave",
+    "pages/notification/notification",
+    "pages/feedback/feedback",
+    "pages/link/link",
+    "pages/component/center/login",
+    "pages/huanke/huanke",
+    "pages/schedule/schedule"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "书丸子教育",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

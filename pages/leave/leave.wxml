@@ -1,0 +1,15 @@
+<!--pages/leave/leave.wxml-->
+<view class="container">
+  <view class="top">
+      <text>请假</text>
+      <image src="/assets/image/yuan.png"></image>
+  </view>
+  <view class="sign">
+    <text class="title">请假原因</text>
+    <form class="form">
+      <textarea></textarea>
+    </form>
+  </view>
+  <view class="btn">确定</view>
+</view>
+

@@ -1,0 +1,78 @@
+<!--pages/signIn/signIn.wxml-->
+<view class="container">
+  <view class="top">
+      <text>签到</text>
+      <image src="/assets/image/yuan.png"></image>
+  </view>
+  <view class="sign">
+    <text class="title">签到时间</text>
+    <view class="time">
+      <swiper class="hour" id="hour" vertical="true" display-multiple-items="3" current-item-id="{{currentHourItemId}}" bindchange="swiperChange">
+        <block wx:for="{{hour}}" wx:key="index" wx:item="item">
+          <swiper-item class="item" item-id="{{index}}" data-id="{{index}}">  
+            <text class="{{currentHourItemId == index-1 ? 'selected' : 'txt'}}">{{item}}</text>
+          </swiper-item>  
+        </block>
+      </swiper>
+      <swiper class="maohao" vertical="true" display-multiple-items="3">
+        <block>
+          <swiper-item class="item">  
+            <text style="transform: scale(0.9);color: #a3a3a3;">:</text>
+          </swiper-item>  
+        </block>
+         <block>
+          <swiper-item class="item">  
+            <text style="transition: all 0.6s;transform: scale(1);color:#000000;font-size: 56rpx;">:</text>
+          </swiper-item>  
+        </block>
+         <block>
+          <swiper-item class="item">  
+            <text style="transform: scale(0.9);color: #a3a3a3;">:</text>
+          </swiper-item>  
+        </block>
+      </swiper>
+       <swiper class="minute" id="minute" vertical="true" display-multiple-items="3" current-item-id="{{currentMinuteItemId}}" bindchange="swiperChange">
+        <block wx:for="{{minute}}" wx:key="index" wx:item="item">
+          <swiper-item class="item" style="display: flex;align-items: center;justify-content: flex-end;" item-id="{{index}}" data-id="{{index}}">  
+            <text class="{{currentMinuteItemId == index-1 ? 'selected' : 'txt'}}">{{item<10?"0"+item: item}}</text>
+          </swiper-item>  
+        </block>
+      </swiper>
+    </view>
+    <text class="title">签退时间</text>
+    <view class="time">
+      <swiper class="hour" id="outHour" vertical="true" display-multiple-items="3" current-item-id="{{currentOutHourItemId}}" bindchange="swiperChange">
+        <block wx:for="{{hour}}" wx:key="index" wx:item="item">
+          <swiper-item class="item" item-id="{{index}}" data-id="{{index}}">  
+            <text class="{{currentOutHourItemId == index-1 ? 'selected' : 'txt'}}">{{item}}</text>
+          </swiper-item>  
+        </block>
+      </swiper>
+      <swiper class="maohao" vertical="true" display-multiple-items="3">
+        <block>
+          <swiper-item class="item">  
+            <text class="txt">:</text>
+          </swiper-item>  
+        </block>
+         <block>
+          <swiper-item class="item">  
+            <text class="txt selected">:</text>
+          </swiper-item>  
+        </block>
+         <block>
+          <swiper-item class="item">  
+            <text class="txt">:</text>
+          </swiper-item>  
+        </block>
+      </swiper>
+       <swiper class="minute" id="outMinute" vertical="true" display-multiple-items="3" current-item-id="{{currentOutMinuteItemId}}" bindchange="swiperChange">
+        <block wx:for="{{minute}}" wx:key="index" wx:item="item">
+          <swiper-item class="item" style="display: flex;align-items: center;justify-content: flex-end;" item-id="{{index}}" data-id="{{index}}">  
+            <text class="{{currentOutMinuteItemId == index-1 ? 'selected' : 'txt'}}">{{item<10?"0"+item: item}}</text>
+          </swiper-item>  
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <view class="btn">{{signin?'签到':'签退'}}</view>
+</view>

@@ -1,0 +1,18 @@
+<!--pages/huanke/huanke.wxml-->
+<view class="container">
+  <view class="top">
+      <view class="empty"></view>
+      <view class="user">
+        <text>戚夏言</text>
+        <image src="/assets/image/yuan.png"></image>
+      </view>
+  </view>
+  <view class="video">
+      <view class="record" bindtap="record" style="top:{{videoPath?'490rpx':'calc(195rpx - 40.5rpx)'}}">{{videoPath?'重新录制':'开始录制'}}</view>
+      <video wx:if="{{videoPath}}" src="{{videoPath}}" duration="60" controls="false" autoplay></video>
+  </view>
+  <view class="voice">
+    <view class="record" bindtouchstart="startVoice" bindtouchend="endVoice" style="top:{{voicePath?'140rpx':'15rpx'}}">{{start?'正在录音':'长按录音'}}</view>
+    <view class="audio"><audio name="王俊东" author="wjd" wx:if="{{voicePath}}" controls="true" src="{{voicePath}}"></audio></view>
+  </view>
+</view>

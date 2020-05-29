@@ -1,0 +1,52 @@
+<!--pages/school_desc/school_desc.wxml-->
+<view class="container" bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd'>
+    <view class="swz">书丸子</view>
+    <view class="swz" style="width:251rpx;">语言表演艺术</view>
+    <view class="theart"><image src="/assets/image/theartoflanguageperformance.png"></image></view>
+    <view class="introduction_p">
+       <image class="introduction" src="/assets/image/introduction.png"></image>
+        <image class="introduction_en" src="/assets/image/introduction_en.png"></image>
+    </view>
+    <view class="video"></view>
+    <text class="content">
+        全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍全是文字介绍
+    </text>
+    <view class="school">
+    <image class="schooldistrict" src="/assets/image/schooldistrict.png"></image>
+    <image class="schooldistrict-en" src="/assets/image/schooldistrict_en.png"></image>
+  </view>
+  <swiper class="swiper" next-margin="140rpx" current-item-id="{{currentItemId}}" previous-margin="140rpx" bindchange="swiperChange">  
+    <block wx:for="{{schoolList}}" wx:key="index" wx:item="item">
+      <swiper-item item-id="{{index}}" data-id="{{item.id}}" bindtap='clickChange'>  
+        <view class='li'>
+          <image class='li1 {{currentItemId == index ? "selected" : "border30"}}' src="{{item.imgPath}}" ></image>
+        </view> 
+      </swiper-item>  
+    </block>
+  </swiper>
+  <view class="school-name">{{schoolList[currentItemId].name}}</view>
+  <view class="yuanxin">
+      <text style="{{schoolList.length-1!=index?'margin-right: 40rpx;':''}}" wx:for="{{schoolList}}" wx:key="index" class='{{currentItemId == index ? "yx-selected" : "yx"}}'></text>
+  </view>
+  <view class="csr-p">
+    <image class="csr" src="/assets/image/csr.png"></image>
+    <image class="csr-en" src="/assets/image/csr_en.png"></image>
+  </view>
+  <view class="desc">
+    <image class="desc-l" src="/assets/image/yj.png"></image>
+    <view class="desc-r">
+      <view class="name">杨皎</view>
+      <view class="title">
+        <text>书丸子教育创始人 校长</text>
+        <text>原云南广播电视台少儿频道制片人</text>
+        <text>国家二级心理咨询师</text>
+        <text>昆明市家庭教育研究会理事</text>
+        <text>昆明市青少年语言文字精品科普基地主任</text>
+      </view>
+      <view class="title">
+        <text>童蒙养正，少年立志，从敢说、能说到会说，开发孩子灵性、保护孩子童心；</text>
+        <text>引导孩子以清澈的心灵和眼睛去观察世界，分享思想、表达感受；以语言之美去发现文化之美，体会生活之美，感悟生命之美。</text>
+      </view>
+    </view>
+  </view>
+</view>

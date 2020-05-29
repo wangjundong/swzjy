@@ -1,0 +1,62 @@
+<!--pages/activities/activities.wxml-->
+<view class="container">
+    <view class="top">
+      <input plain placeholder-style="color:#ffffff;" class="search" placeholder="书丸子赛事活动搜索"></input>
+      <view class='title'>
+        <text class="t1">书丸子教育2018学年汇报演出迎新春晚会</text>
+        <text class="t2">把世界读给你听</text>
+      </view>
+      <swiper class="swiper" next-margin="130rpx" current-item-id="{{currentItemId}}" previous-margin="130rpx" bindchange="swiperChange">  
+        <block wx:for="{{activitiesList}}" wx:key="index" wx:item="item">
+          <swiper-item item-id="{{index}}">  
+            <navigator class='li' url="/pages/web/web?url={{item.url}}">
+              <image class='li1 {{currentItemId == index ? "selected" : ""}}' src="{{item.imgPath}}" ></image>
+            </navigator> 
+          </swiper-item>  
+        </block>
+      </swiper>
+    </view>
+    <view class="msg">
+      <view class="msg-l">
+        <image style="width: 83rpx;height: 21rpx;" src="/assets/image/wanzi.png"></image>
+        <image style="width: 79rpx;height: 32rpx;margin-top:10rpx;" src="/assets/image/kuaixun.png"></image>
+      </view>
+      <view class="msg-r">
+        <swiper class="swiper1" autoplay interval="3000" vertical display-multiple-items="2">
+          <swiper-item>
+            <navigator>书丸子“说学逗唱”获奖名单公布1</navigator>
+          </swiper-item>
+          <swiper-item>
+            <navigator>书丸子“说学逗唱”获奖名单公布2</navigator>
+          </swiper-item>
+          <swiper-item>
+            <navigator>书丸子“说学逗唱”获奖名单公布3</navigator>
+          </swiper-item>
+          <swiper-item>
+            <navigator>书丸子“说学逗唱”获奖名单公布4</navigator>
+          </swiper-item>
+          <swiper-item>
+            <navigator>书丸子“说学逗唱”获奖名单公布5</navigator>
+          </swiper-item>
+        </swiper>
+      </view>
+    </view>
+    <view class="empty"></view>
+    <navigator class="hd-item"  url="/pages/web/web?url=https://mp.weixin.qq.com/s/0zBsbCX0koyRrsO2h3_4Tw">
+      <image src="https://static.ynswzjy.cn/xcx/hd1.png"></image>
+      <view class="go">
+        <image src="/assets/image/go.png"></image>
+      </view>
+    </navigator>  
+    <view class="empty"></view>
+    <navigator class="hd-item"  url="/pages/web/web?url=https://mp.weixin.qq.com/s/0zBsbCX0koyRrsO2h3_4Tw">
+      <image src="https://static.ynswzjy.cn/xcx/hd1.png"></image>
+       <view class="go">
+        <image src="/assets/image/go.png"></image>
+      </view>
+    </navigator> 
+    <view class="empty"></view>
+    <navigator class="hd-item"  url="/pages/web/web?url=https://mp.weixin.qq.com/s/0zBsbCX0koyRrsO2h3_4Tw">
+      <image src="https://static.ynswzjy.cn/xcx/hd1.png"></image>
+    </navigator> 
+</view>

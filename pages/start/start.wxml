@@ -1,0 +1,7 @@
+<!--pages/start/start.wxml-->
+<view class="container" bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd'>
+  <image class="fm1" src="/assets/image/fm1.png"></image>
+  <image class="logo" src="/assets/image/logo.png"></image>
+  <image class="fm2" src="/assets/image/fm2.png"></image>
+  <image class="fm3" src="/assets/image/fm3.png"></image>
+</view>

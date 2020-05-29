@@ -1,0 +1,18 @@
+<!--pages/feedback/feedback.wxml-->
+<view class="container" style="background-position-x:{{bgSize?'-560rpx':'-440rpx'}}">
+  <view class="top">
+    <image class="fk" src="/assets/image/yjfk1.png"></image>
+    <image class="logo" src="/assets/image/logo.png"></image>
+  </view>
+  <form class="form">
+    <image style="width:69rpx;height:32rpx;margin-top: 100rpx;" src="/assets/image/xm.png"></image>
+    <input name='name' type="text"></input>
+    <image style="width:70rpx;height:32rpx;margin-top:40rpx;" src="/assets/image/yx.png"></image>
+    <input name='email' type="digit"></input>
+    <image style="width:144rpx;height:32rpx;margin-top:40rpx;" src="/assets/image/yjfk.png"></image>
+    <textarea class="content">
+
+    </textarea>
+    <button class="sure" type="submit">确定</button>
+  </form>
+</view>

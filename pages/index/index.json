@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "component_login": "/pages/component/center/login",
+    "component_center": "/pages/component/center/center",
+    "component_index": "/pages/component/index/index"
+  }
+}

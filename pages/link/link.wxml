@@ -1,0 +1,22 @@
+<!--pages/link/link.wxml-->
+<view class="container">
+    <view class="v1">
+        <text style="margin: 140rpx 0 50rpx 40rpx;width: 80%;">西昌校区：恒兴写字楼附二楼</text>
+        <text style="margin: 0 0 0 40rpx;width: 65%;">广福校区：前兴路144号</text>
+        <text style="margin: 10rpx 0 40rpx 120rpx;width: 50%;">（金果幼儿园4楼）</text>
+        <text style="margin: 0 0 0 40rpx;width: 75%;">北市校区：金江校区曦苑2-8</text>
+    </view>
+    
+    <view class="v2" style="background-color: #e07e23;top: 470rpx;z-index:7;">
+        <text>0871-63153518</text>
+    </view>
+   
+    <view class="v2" style="background-color: #f4d05e;top: 750rpx;z-index:6;">
+       <text>ynswzjy@126.com</text>
+    </view>
+    <view class="v11" style="background-color: #e07e23;"><text>地址</text></view>
+    <view class="v11" style="background-color: #fff5b8;top: 540rpx;"><text>电话</text></view>
+    <view class="v11" style="background-color: #f9d92c;top: 820rpx;"><text>邮箱</text></view>
+    <image class="logo" src="/assets/image/logo.png"></image>
+    <text class="link">联系我们</text>
+</view>

@@ -1,0 +1,30 @@
+<!--pages/notification/notification.wxml-->
+<view class="container">
+  <view class="top">
+      <image class="logo" src="/assets/image/logo.png"></image>
+      <view class="userinfo">
+        <text>戚夏言</text>
+        <text style="margin-top:10rpx;">三年六班</text>
+      </view>
+  </view>
+  <view class="sign">
+    <text class="title">通知</text>
+    <swiper class="swiper" vertical current-item-id="{{currentItemId}}" display-multiple-items="2" bindchange="swiperChange">
+      <block wx:for="{{msgList}}" wx:key="index" wx:item="item">
+      <swiper-item class="item" item-id="{{index}}" data-id="{{item.id}}">  
+        <view class="time">
+          <text style="padding-left:20rpx;margin-top:20rpx;">{{item.date}}</text>
+          <text style="padding-left:20rpx;margin-bottom:10rpx">{{item.time}}</text>
+          <text class="empty"></text>
+        </view>
+        <view class="msg" style="background-color:{{item.type==1?'#f4d05e':'#e07e23'}}">
+            <text class="ntf" style="color:{{item.type==1?'#FFA500':'#000000'}}">{{item.type==1?'一般通知':'重要通知'}}</text>
+            <scroll-view class="message" scroll-y>
+                <text>{{item.msg}}</text>
+            </scroll-view>
+        </view> 
+      </swiper-item>  
+    </block>
+    </swiper>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+<!--pages/teacherList/teacherList.wxml-->
+<view class="container">
+  <view class="team">
+    <image class="teacher_team" src="/assets/image/teacher_team.png"></image>
+    <image class="teacher_team_en" src="/assets/image/teacher_team_en.png"></image>
+  </view>
+  <swiper class="swiper" next-margin="140rpx" current-item-id="{{currentItemId}}" previous-margin="160rpx" bindchange="swiperChange">  
+    <block wx:for="{{teacherList}}" wx:key="index" wx:item="item">
+      <swiper-item item-id="{{index}}" data-id="{{item.id}}" bindtap='clickChange'>  
+        <view class='li'>
+          <image class='li1 {{currentItemId == index ? "selected" : "border30"}}' src="{{item.imgPath}}" ></image>
+        </view> 
+      </swiper-item>  
+    </block>
+  </swiper>
+  <view class="desc" wx:if="{{teacherList[currentItemId].title.length>0}}">
+    <text wx:for="{{teacherList[currentItemId].title}}" wx:key="index" wx:item="item" style="{{index==0?'margin-top: 20rpx;':''}}" class="{{index<2?'word1':'word2'}}">{{item}}</text>
+  </view>
+  <view class="avatar">
+    <image src="{{teacherList[currentItemId].avatar}}"></image>
+    <text>{{teacherList[currentItemId].name}}</text>
+  </view>
+  <view class="enter">进入</view>
+</view>

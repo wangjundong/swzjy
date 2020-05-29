@@ -1,0 +1,50 @@
+<!--pages/schoolDetail/schoolDetail.wxml-->
+<view class="container">
+   <image class="manage" src="/assets/image/manage.png"></image>
+   <image class="manage-en" src="/assets/image/manage_en.png"></image>
+   <swiper class="swiper" current-item-id="1" bindchange="swiperChange">  
+    <block>
+      <swiper-item class="swiper-item" item-id="1" data-id="1">  
+          <image class="item-l" src="/assets/image/teacher1.png"></image>
+          <view class="item-r">
+            <view class="name">陈西妮</view>
+            <view class="title">
+              <text>执行总监</text>
+              <text>中国首届百佳电视艺术工作者</text>
+              <text>中国"德艺双馨艺术家"荣誉称号</text>
+              <text>中国首批青少年电视节目制作人</text>
+              <text>国际儿童电影节总导演</text>
+              <text>"第六届金鸡百花奖开幕式"副总导演</text>
+              <text>"全国第五届民族运动会开幕式"导演</text>
+              <text>"99昆明世界园艺博览会"副总导演</text>
+            </view>
+          </view>
+      </swiper-item>  
+    </block>
+
+    <block>
+      <swiper-item class="swiper-item" item-id="2" data-id="2">  
+          <image class="item-l" src="/assets/image/teacher1.png"></image>
+          <view class="item-r">
+            <view class="name">陈西妮</view>
+            <view class="title">
+              <text>执行总监</text>
+              <text>中国首届百佳电视艺术工作者</text>
+              <text>中国"德艺双馨艺术家"荣誉称号</text>
+              <text>中国首批青少年电视节目制作人</text>
+              <text>国际儿童电影节总导演</text>
+              <text>"第六届金鸡百花奖开幕式"副总导演</text>
+              <text>"全国第五届民族运动会开幕式"导演</text>
+              <text>"99昆明世界园艺博览会"副总导演</text>
+            </view>
+          </view>
+      </swiper-item>  
+    </block>
+  </swiper>
+  <view class="yuanxin">
+      <text style="margin-right: 40rpx" class='{{currentItemId == 1 ? "yx-selected" : "yx"}}'></text>
+      <text class='{{currentItemId == 2 ? "yx-selected" : "yx"}}'></text>
+  </view>
+  <image class="suozao" src="/assets/image/suozao.png"></image>
+  <image class="back" src="/assets/image/back.png" bindtap="back"></image>
+</view>

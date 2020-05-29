@@ -1,0 +1,15 @@
+/* pages/schoolDetail/schoolDetail.wxss */
+.container{display: flex;flex-direction: column;}
+.manage{width: 219rpx;height: 49rpx;margin-left: 80rpx;}
+.manage-en{width: 431rpx;height: 42rpx;margin-left: 80rpx;margin-top: 20rpx;}
+.swiper{width: calc(100% - 100rpx);margin-left: 80rpx;margin-top: 60rpx;}
+.swiper-item{display: flex;}
+.item-l{width: 177rpx;height: 253rpx;margin-top: 20rpx;}
+.item-r{display: flex;flex-direction: column;font-size: 24rpx;font-weight: bold;margin-left: 20rpx;}
+.name{width: 100rpx;height: 40rpx;background-color: #e8c65a;border-radius: 10rpx;line-height: 40rpx;text-align: center;}
+.title{display: flex;flex-direction: column;}
+.yuanxin{display: flex;text-align: center;width: 100%;justify-content: center;align-items: center;margin-top: 40rpx;}
+.yx{width: 24rpx;height: 24rpx;border-radius: 50%;border:1px solid #999999;}
+.yx-selected{width: 30rpx;height: 30rpx;border-radius: 50%;border: none;background-color: #e8c65a;}
+.suozao{text-align: center;width: 258rpx;height: 22rpx;margin: 80rpx auto 0 auto;}
+.back{width: 80rpx;height: 80rpx;position: absolute;bottom: 80rpx;left: calc(50% - 35rpx);}
